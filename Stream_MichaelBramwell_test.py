@@ -15,5 +15,8 @@ def load_data(nrows):
     return data
 
 data_load_state = st.text("Loading Data...")
-load_data(10000)
+data = load_data(10000)
 data_load_state.text("Loadinf Data ...Done")
+
+st.subheader("Raw Data")
+st.write(data)
