@@ -14,6 +14,6 @@ def load_data(nrows):
     data[DATE_COLUMN] = pd.to_datetime(data[DATE_COLUMN])
     return data
 
-    data_load_state = st.text("Loading Data...")
-    load_data(10000)
-    data_load_state.text("Loadinf Data ...Done")
+data_load_state = st.text("Loading Data...")
+load_data(10000)
+data_load_state.text("Loadinf Data ...Done")
